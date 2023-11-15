@@ -8,7 +8,40 @@
  * @author Fran
  */
 public class Principal extends javax.swing.JFrame {
-
+// Datos mínimos de la primera dona
+public static String marca0 = "Glaze";
+public static double precio0 = 40.5;
+public static int contenido0 = 12;
+public static double peso0 = 405;
+public static String sabor0 = "Vainilla";
+ 
+// Datos mínimos de la segunda dona
+public static String marca1 = "Ocaso";
+public static double precio1 = 45.9;
+public static int contenido1 = 12;
+public static double peso1 =520;
+public static String sabor1 = "Chocolate";
+ 
+// Datos mínimos de la tercera dona
+public static String marca2 = "Greeny";
+public static double precio2 =22.9;
+public static int contenido2 = 6;
+public static double peso2 = 220;
+public static String sabor2 = "Pistacho";
+ 
+// Datos mínimos de la cuarta dona
+public static String marca3 = "Pumpin";
+public static double precio3 =28.9;
+public static int contenido3 = 6;
+public static double peso3 = 283;
+public static String sabor3 = "Calabaza";
+ 
+// Datos mínimos de la quinta dona
+public static String marca4 = "Redbelve";
+public static double precio4 = 33.9;
+public static int contenido4 = 6;
+public static double peso4 = 330;
+public static String sabor4 = "Fresa";
     /**
      * Creates new form Principal
      */
@@ -31,7 +64,7 @@ public class Principal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         MNUSALIR = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        MNUCONSULTA = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
@@ -61,13 +94,13 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu2.setText("Mantenimiento");
 
-        jMenuItem2.setText("Consultar dona");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        MNUCONSULTA.setText("Consultar dona");
+        MNUCONSULTA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                MNUCONSULTAActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem2);
+        jMenu2.add(MNUCONSULTA);
 
         jMenuItem3.setText("Modificar dona");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
@@ -167,9 +200,12 @@ public class Principal extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_MNUSALIRActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void MNUCONSULTAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MNUCONSULTAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+        CONSULTA objCONSULTA= new CONSULTA();
+        objCONSULTA.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_MNUCONSULTAActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
      // TODO add your handling code here:
@@ -238,6 +274,7 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem MNUACERCADETIENDA;
+    private javax.swing.JMenuItem MNUCONSULTA;
     private javax.swing.JMenuItem MNUSALIR;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -248,7 +285,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
