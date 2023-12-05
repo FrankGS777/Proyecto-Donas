@@ -65,8 +65,8 @@ public static String sabor4 = "Fresa";
         MNUSALIR = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         MNUCONSULTA = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        MNUMODIFICAR = new javax.swing.JMenuItem();
+        MNULISTAR = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -102,21 +102,21 @@ public static String sabor4 = "Fresa";
         });
         jMenu2.add(MNUCONSULTA);
 
-        jMenuItem3.setText("Modificar dona");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        MNUMODIFICAR.setText("Modificar dona");
+        MNUMODIFICAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                MNUMODIFICARActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem3);
+        jMenu2.add(MNUMODIFICAR);
 
-        jMenuItem4.setText("Listar donas");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        MNULISTAR.setText("Listar donas");
+        MNULISTAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                MNULISTARActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem4);
+        jMenu2.add(MNULISTAR);
 
         jMenuBar1.add(jMenu2);
 
@@ -207,13 +207,19 @@ public static String sabor4 = "Fresa";
         this.setVisible(false);
     }//GEN-LAST:event_MNUCONSULTAActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void MNUMODIFICARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MNUMODIFICARActionPerformed
      // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+     MODIFICAR objMODIFICAR= new MODIFICAR();
+        objMODIFICAR.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_MNUMODIFICARActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void MNULISTARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MNULISTARActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+        LISTAR objLISTAR= new LISTAR();
+        objLISTAR.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_MNULISTARActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         // TODO add your handling code here:
@@ -275,6 +281,8 @@ public static String sabor4 = "Fresa";
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem MNUACERCADETIENDA;
     private javax.swing.JMenuItem MNUCONSULTA;
+    private javax.swing.JMenuItem MNULISTAR;
+    private javax.swing.JMenuItem MNUMODIFICAR;
     private javax.swing.JMenuItem MNUSALIR;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -285,8 +293,6 @@ public static String sabor4 = "Fresa";
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem8;
